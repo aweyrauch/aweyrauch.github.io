@@ -27,29 +27,28 @@
 </header>
 
        
-    <div class="row">
-
-  
+    <div class="row" style="margin-bottom: 50px;">
     
       <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
       	<img class="img-responsive bottlelabel" src="/images/brown-beer.jpg">
-        <h1>Brown Beer</h1>
+        <h1>Rainbow Beer</h1>
+        <h6>belgian tripel</h6>
         
         <div class="row">
-        	<div class="col-lg-4 stats">
+        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 stats">
+        		<h3>8%</h3>
         		<h6>abv</h6>
-        		<h3>7%</h3>
         	</div>
-        	<div class="col-lg-4">
+        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        		<h3>32</h3>
         		<h6>ibu</h6>
-        		<h3>50</h3>
         	</div>
-        	<div class="col-lg-3">
+        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        		<h3>5</h3>
         		<h6>srm</h6>
-        		<h3>30</h3>
         	</div>
         </div>
-         <p><p>A strong brown beer.  Sometimes called Texas Brown.  Malty and hoppy.  Balanced but strong.</p>
+         <p><p>Light in colour, strong in flavour.  A Beligian tripel’s flavour comes from the special yeast.  Malt and hops take a back seat on this one.</p>
 </p>
          <small class="post-meta">brewed on Nov 18, 2015</small>
          
@@ -58,91 +57,20 @@
       <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
       	<img class="img-responsive bottlelabel" src="/images/brown-beer.jpg">
         <h1>Brown Beer</h1>
+        <h6>strong american brown</h6>
         
         <div class="row">
-        	<div class="col-lg-4 stats">
-        		<h6>abv</h6>
+        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 stats">
         		<h3>7%</h3>
-        	</div>
-        	<div class="col-lg-4">
-        		<h6>ibu</h6>
-        		<h3>50</h3>
-        	</div>
-        	<div class="col-lg-3">
-        		<h6>srm</h6>
-        		<h3>30</h3>
-        	</div>
-        </div>
-         <p><p>A strong brown beer.  Sometimes called Texas Brown.  Malty and hoppy.  Balanced but strong.</p>
-</p>
-         <small class="post-meta">brewed on Nov 18, 2015</small>
-         
-      </div>
-    
-      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-      	<img class="img-responsive bottlelabel" src="/images/brown-beer.jpg">
-        <h1>Brown Beer</h1>
-        
-        <div class="row">
-        	<div class="col-lg-4 stats">
         		<h6>abv</h6>
-        		<h3>7%</h3>
         	</div>
-        	<div class="col-lg-4">
-        		<h6>ibu</h6>
+        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
         		<h3>50</h3>
-        	</div>
-        	<div class="col-lg-3">
-        		<h6>srm</h6>
-        		<h3>30</h3>
-        	</div>
-        </div>
-         <p><p>A strong brown beer.  Sometimes called Texas Brown.  Malty and hoppy.  Balanced but strong.</p>
-</p>
-         <small class="post-meta">brewed on Nov 18, 2015</small>
-         
-      </div>
-    
-      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-      	<img class="img-responsive bottlelabel" src="/images/brown-beer.jpg">
-        <h1>Brown Beer</h1>
-        
-        <div class="row">
-        	<div class="col-lg-4 stats">
-        		<h6>abv</h6>
-        		<h3>7%</h3>
-        	</div>
-        	<div class="col-lg-4">
         		<h6>ibu</h6>
-        		<h3>50</h3>
         	</div>
-        	<div class="col-lg-3">
-        		<h6>srm</h6>
+        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
         		<h3>30</h3>
-        	</div>
-        </div>
-         <p><p>A strong brown beer.  Sometimes called Texas Brown.  Malty and hoppy.  Balanced but strong.</p>
-</p>
-         <small class="post-meta">brewed on Nov 18, 2015</small>
-         
-      </div>
-    
-      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-      	<img class="img-responsive bottlelabel" src="/images/brown-beer.jpg">
-        <h1>Brown Beer</h1>
-        
-        <div class="row">
-        	<div class="col-lg-4 stats">
-        		<h6>abv</h6>
-        		<h3>7%</h3>
-        	</div>
-        	<div class="col-lg-4">
-        		<h6>ibu</h6>
-        		<h3>50</h3>
-        	</div>
-        	<div class="col-lg-3">
         		<h6>srm</h6>
-        		<h3>30</h3>
         	</div>
         </div>
          <p><p>A strong brown beer.  Sometimes called Texas Brown.  Malty and hoppy.  Balanced but strong.</p>
@@ -165,10 +93,11 @@
 	  $.simpleWeather({
 	    location: 'Vancouver, CA',
 	    woeid: '',
-	    unit: 'f',
+	    unit: 'c',
 	    success: function(weather) {
 	      html = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-	      html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
+	      html += '<ul><li>high: '+weather.high+'&deg;C</li>';
+	      html += '<li>low: '+weather.low+'&deg;C</li>';
 	      html += '<li class="currently">'+weather.currently+'</li>';
 	      html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
 	  
@@ -180,9 +109,6 @@
 	  });
 	});
 	
-		
-	
-
 </script>
 
 </footer>

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Brown Beer"
+style: "strong american brown"
 date: 2015-11-18 15:49:22 -0800
 abv: 7%
 ibu: 50

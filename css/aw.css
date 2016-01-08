@@ -3,17 +3,10 @@ h1 {
 	}
 
 .bottlelabel {
-	border: 10px;
-	border-color: brown;
-	border-style: solid;
-	border-radius: 20px;
+
 }
 
-.stats {
-	border-radius: 20px;
-	padding: 10px;
-	border: 10px solid #73AD21;
-	
+.stats {	
 }
 
 
