@@ -11,8 +11,11 @@
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/aw.css">
+  <script src="/js/jquery-2.1.4.min.js" ></script>
+  <script src="/js/bootstrap.min.js" ></script>
+  <script src="/js/jquery.simpleWeather.min.js" ></script>
   <link rel="canonical" href="http://yourdomain.com/2015/11/18/Brown-Beer-5.html">
-  <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://yourdomain.com/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="Vowels Brewing" href="http://yourdomain.com/feed.xml">
 </head>
 
 
@@ -37,6 +40,38 @@
 
 </article>
 
+    
+	<footer class="site-footer">
+
+<div id="weather"></div>
+
+<script type="text/javascript">
+	// Docs at http://simpleweatherjs.com
+	$(document).ready(function() {
+	  $.simpleWeather({
+	    location: 'Vancouver, CA',
+	    woeid: '',
+	    unit: 'f',
+	    success: function(weather) {
+	      html = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+	      html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
+	      html += '<li class="currently">'+weather.currently+'</li>';
+	      html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
+	  
+	      $("#weather").html(html);
+	    },
+	    error: function(error) {
+	      $("#weather").html('<p>'+error+'</p>');
+	    }
+	  });
+	});
+	
+		
+	
+
+</script>
+
+</footer>
 
 	</div>
   </body>
