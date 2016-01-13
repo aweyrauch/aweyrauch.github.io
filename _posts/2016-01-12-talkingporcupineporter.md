@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 style: imperial porter
 date: "2016-01-20 15:49:22 -0800"
@@ -10,7 +10,4 @@ label: "brown-beer.jpg"
 stock: "n"
 ---
 
-
-## A New Post
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+Oaked Vanilla Bourbon Porter.  Lots of flavour and strong.
