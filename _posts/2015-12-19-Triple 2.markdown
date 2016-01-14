@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Rainbow Beer"
+title: "Rainbow Deer"
 style: "belgian tripel"
 date: 2015-11-18 15:49:22 -0800
 abv: 8%
 ibu: 32
 srm: 5
-label: brown-beer.jpg
+label: rainbow-deer.jpg
 stock: y
 ---
 Light in colour, strong in flavour.  A Beligian tripel's flavour comes from the special yeast.  Malt and hops take a back seat on this one.
