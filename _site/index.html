@@ -24,31 +24,89 @@
 	 <div class="container-fluid">
     <header>
 	<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top: 10px;margin-bottom: 10px;">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " style="margin-top: 10px;margin-bottom: 10px;">
 <!--			<img class="img-responsive" src="/images/VB web logo.png">-->
-			<h1>VOWELS BREWING</h1>
+			<h1 class="stretch" style="padding: 10px;">VOWELS&nbsp;BREWING</h1>
 		</div>
 	</div>
 </header>
 
+<script type="text/javascript">
+$.fn.strech_text = function(){
+    var elmt          = $(this),
+        cont_width    = elmt.width(),
+        txt           = elmt.html(),
+        one_line      = $('<span class="stretch_it">' + txt + '</span>'),
+        nb_char       = elmt.text().length,
+        spacing       = cont_width/nb_char,
+        txt_width;
+    
+    elmt.html(one_line);
+    txt_width = one_line.width();
+    
+    if (txt_width < cont_width){
+        var  char_width     = txt_width/nb_char,
+             ltr_spacing    = spacing - char_width + (spacing - char_width)/nb_char ; 
+  
+        one_line.css({'letter-spacing': ltr_spacing});
+    } else {
+        one_line.contents().unwrap();
+        elmt.addClass('justify');
+    }
+};
+
+
+$(document).ready(function () {
+    $('.stretch').each(function(){
+        $(this).strech_text();
+    });
+});
+
+</script>
+
        
     <div class="row" style="margin-bottom: 50px;">
     
-      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+      	<img class="img-responsive bottlelabel" src="/images/brown-beer-web.jpg">
+        <h2>Talking Porcupine</h2>
+        <h6>strong american brown</h6>
+        
+        <div class="row">
+        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 stats">
+        		<h3>7%</h3>
+        		<h6>abv</h6>
+        	</div>
+        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        		<h3>50</h3>
+        		<h6>ibu</h6>
+        	</div>
+        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        		<h3>30</h3>
+        		<h6>srm</h6>
+        	</div>
+        </div>
+         <p><p>A strong brown beer.  Sometimes called Texas Brown.  Malty and hoppy.  Balanced but strong.</p>
+</p>
+         <small class="post-meta">brewed on Nov 18, 2015</small>
+         
+      </div>
+    
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
       	<img class="img-responsive bottlelabel" src="/images/rainbow-deer-web.jpg">
-        <h1>Rainbow Deer</h1>
+        <h2>Rainbow Deer</h2>
         <h6>belgian tripel</h6>
         
         <div class="row">
-        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 stats">
+        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 stats">
         		<h3>8%</h3>
         		<h6>abv</h6>
         	</div>
-        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
         		<h3>32</h3>
         		<h6>ibu</h6>
         	</div>
-        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
         		<h3>5</h3>
         		<h6>srm</h6>
         	</div>
@@ -59,21 +117,21 @@
          
       </div>
     
-      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
       	<img class="img-responsive bottlelabel" src="/images/brown-beer-web.jpg">
-        <h1>Brown Beer</h1>
+        <h2>Brown Beer</h2>
         <h6>strong american brown</h6>
         
         <div class="row">
-        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 stats">
+        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 stats">
         		<h3>7%</h3>
         		<h6>abv</h6>
         	</div>
-        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
         		<h3>50</h3>
         		<h6>ibu</h6>
         	</div>
-        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
         		<h3>30</h3>
         		<h6>srm</h6>
         	</div>
@@ -88,7 +146,8 @@
 </div>
 
     
-	<footer class="site-footer">
+	<footer class="site-footer row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
 <div id="weather"></div>
 
@@ -115,7 +174,7 @@
 	});
 	
 </script>
-
+</div>
 </footer>
 
 	</div>

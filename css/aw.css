@@ -1,7 +1,14 @@
+body {
+	overflow-x: hidden;
+}
+
 h1 {
 	font-family: 'Raleway', sans-serif;
 	}
 
+h2 {
+	font-family: 'Raleway', sans-serif;
+	}
 .bottlelabel {
 
 }
@@ -24,7 +31,6 @@ h1 {
 }
 
 #weather {
-  width: 500px;
   margin: 0px auto;
   text-align: center;
   text-transform: uppercase;
