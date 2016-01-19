@@ -2,7 +2,7 @@
 layout: post
 title: "Talking Porcupine"
 style: "baltic porter"
-date: 2015-11-18 15:49:22 -0800
+date: 2015-12-13 15:49:22 -0800
 abv: 8%
 ibu: 35
 srm: 44
