@@ -1,4 +1,4 @@
-<header>
+<!--<header>
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-sm-12 hidden-xs " style="margin-top: 10px;margin-bottom: 10px;">
 			<h1 class="stretch" style="padding: 10px;">VOWELS&nbsp;BREWING</h1>
@@ -7,37 +7,28 @@
 			<h2 class="stretch" style="padding: 10px;">VOWELS&nbsp;BREWING</h1>
 		</div>
 	</div>
-</header>
+</header>-->
 
-<script type="text/javascript">
-$.fn.strech_text = function(){
-    var elmt          = $(this),
-        cont_width    = elmt.width(),
-        txt           = elmt.html(),
-        one_line      = $('<span class="stretch_it">' + txt + '</span>'),
-        nb_char       = elmt.text().length,
-        spacing       = cont_width/nb_char,
-        txt_width;
-    
-    elmt.html(one_line);
-    txt_width = one_line.width();
-    
-    if (txt_width < cont_width){
-        var  char_width     = txt_width/nb_char,
-             ltr_spacing    = spacing - char_width + (spacing - char_width)/nb_char ; 
-  
-        one_line.css({'letter-spacing': ltr_spacing});
-    } else {
-        one_line.contents().unwrap();
-        elmt.addClass('justify');
-    }
-};
+<div class="row" style="margin-top: 10px;margin-bottom: 10px;">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<div class="vbwrapper">
 
+		    <div class="vbletters">V</div>
+		    <div class="vbletters">O</div>
+		    <div class="vbletters">W</div>
+		    <div class="vbletters">E</div>
+		    <div class="vbletters">L</div>
+		    <div class="vbletters">S</div>
+		    <div class="vbletters">&nbsp</div>
+		    <div class="vbletters">B</div>
+		    <div class="vbletters">R</div>
+		    <div class="vbletters">E</div>
+		    <div class="vbletters">W</div>
+		    <div class="vbletters">I</div>
+		    <div class="vbletters">N</div>
+		    <div class="vbletters">G</div>
 
-$(document).ready(function () {
-    $('.stretch').each(function(){
-        $(this).strech_text();
-    });
-});
-
-</script>
+		    <span class="vbstretch"></span>
+		</div>
+	</div>
+</div>

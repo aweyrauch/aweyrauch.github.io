@@ -10,9 +10,32 @@ h1 {
 h2 {
 	font-family: 'Raleway', sans-serif;
 	}
+	
 .bottlelabel {
 
 }
 
 .stats {	
+}
+
+.vbwrapper {
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+
+}
+
+.vbletters {
+    vertical-align: top;
+    display: inline-block;
+    zoom: 1;
+	font: bold 48px 'Raleway', sans-serif;
+	color: #c3c3c3;
+}
+
+.vbstretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
 }
