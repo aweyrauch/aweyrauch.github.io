@@ -22,15 +22,31 @@ h2 {
     text-align: justify;
     -ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
+    border: 5px solid #755e5e;
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+   
 
 }
 
 .vbletters {
-    vertical-align: top;
+    vertical-align: center;
     display: inline-block;
     zoom: 1;
 	font: bold 48px 'Raleway', sans-serif;
-	color: #c3c3c3;
+	color: #755e5e;
+	padding-top: 20px;
+}
+
+.vbletterssm {
+    vertical-align: top;
+    display: inline-block;
+    zoom: 1;
+	font: bold 24px 'Raleway', sans-serif;
+	color: #755e5e;
+	padding-top: 16px;
 }
 
 .vbstretch {
