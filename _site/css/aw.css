@@ -36,8 +36,9 @@ h2 {
     display: inline-block;
     zoom: 1;
 	font: bold 48px 'Raleway', sans-serif;
-	color: #755e5e;
+	color: white;
 	padding-top: 20px;
+	-webkit-text-stroke: 3px #755e5e;
 }
 
 .vbletterssm {
@@ -45,8 +46,9 @@ h2 {
     display: inline-block;
     zoom: 1;
 	font: bold 24px 'Raleway', sans-serif;
-	color: #755e5e;
+	color: white;
 	padding-top: 16px;
+	-webkit-text-stroke: 2px #755e5e;
 }
 
 .vbstretch {
