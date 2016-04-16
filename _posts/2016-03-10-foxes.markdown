@@ -1,0 +1,12 @@
+---
+layout: post
+title: "The Foxes"
+style: "rauchbier"
+date: 2016-03-09 15:49:22 -0800
+abv: 6%
+ibu: 25
+srm: 25
+label: rauchbier-web.jpg
+stock: y
+---
+Gather around the campfire and learn of the fox family lurking behind the smoke.  Rauchbier is a solid malty brown style with malts smoked over beechwood.  Too much smoke or just right.  Ask the foxes.
