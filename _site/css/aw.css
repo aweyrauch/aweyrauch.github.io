@@ -11,6 +11,12 @@ h2 {
 	font-family: 'Raleway', sans-serif;
 	}
 	
+.menu {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+}
+	
 .bottlelabel {
 
 }
@@ -23,40 +29,19 @@ h2 {
 	border-radius: 20px;
 }
 
-.vbwrapper {
-    text-align: justify;
-    -ms-text-justify: distribute-all-lines;
-    text-justify: distribute-all-lines;
-    padding-left: 50px;
-    padding-right: 50px;
-
-   
-
+a:link {
+	text-decoration: none;
 }
 
-.vbletters {
-    vertical-align: center;
-    display: inline-block;
-    zoom: 1;
-	font: bold 48px 'Raleway', sans-serif;
-	color: white;
-	padding-top: 20px;
-	-webkit-text-stroke: 3px #755e5e;
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
 }
 
-.vbletterssm {
-    vertical-align: top;
-    display: inline-block;
-    zoom: 1;
-	font: bold 20px 'Raleway', sans-serif;
-	color: white;
-	padding-top: 16px;
-	-webkit-text-stroke: 3px #755e5e;
-}
 
-.vbstretch {
-    width: 100%;
-    display: inline-block;
-    font-size: 0;
-    line-height: 0
 }
